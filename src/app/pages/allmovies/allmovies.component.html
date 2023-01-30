@@ -6,8 +6,8 @@
       <h1>{{movie.date}}</h1>
       <h1>Action</h1>
       <div class="flex space-x-8">
-       <fa-icon  [icon]="faEdit"></fa-icon>
-       <fa-icon (click)="removeMovie()" [icon]="fadelete"></fa-icon>
+        <fa-icon (click)="editMovie(movie.id)" [icon]="faEdit" class="cursor-pointer"></fa-icon>
+        <fa-icon (click)="removeMovie(movie.id)" [icon]="fadelete" class="cursor-pointer"></fa-icon>
       </div>
     </div>
   </div>

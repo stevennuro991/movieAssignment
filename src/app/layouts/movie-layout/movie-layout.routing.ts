@@ -6,9 +6,9 @@ import { FindmovieComponent } from "src/app/pages/findmovie/findmovie.component"
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
 export const MovieLayoutRoutes: Routes = [
-  { path: "", component: AllmoviesComponent  },
-  { path: "addMovies", component: AddmovieComponent},
-  { path: "findMovies", component: FindmovieComponent},
-  { path: "editMovies", component: EditmovieComponent},  
- // { path: "rtl", component: RtlComponent }
+  { path: "", component: AllmoviesComponent },
+  { path: "addMovies", component: AddmovieComponent },
+  { path: "findMovies", component: FindmovieComponent },
+  { path: "editMovies/:id", component: EditmovieComponent },
+  // { path: "rtl", component: RtlComponent }
 ];

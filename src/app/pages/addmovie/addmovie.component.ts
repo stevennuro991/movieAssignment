@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-addmovie',
@@ -9,6 +10,11 @@ export class AddmovieComponent {
   public title: string = "";
   public category: string = "";
   public date: Date = new Date();
+
+  constructor(
+    private route: ActivatedRoute, private router: Router
+  ) { }
+
 
   public addMovie() {
 
@@ -21,8 +27,13 @@ export class AddmovieComponent {
         id: movies.length + 1
       });
       window.localStorage.setItem("movies", JSON.stringify(movies));
+      this.title = "";
+      this.category = "";
+      this.date = new Date();
+
+      this.router.navigate(["/"]);
     }
   }
 
-  
+
 }
