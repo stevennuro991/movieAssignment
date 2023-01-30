@@ -1,0 +1,14 @@
+<div class="overflow-x-hidden">
+  <div *ngFor="let movie of movies">
+    <div class="flex mt-2 py-10 px-20 justify-between items-center w-full h-[62px] bg-gray-200">
+      <h1>{{movie.id}}</h1>
+      <h1>{{movie.title}}</h1>
+      <h1>{{movie.date}}</h1>
+      <h1>Action</h1>
+      <div class="flex space-x-8">
+        <fa-icon (click)="editMovie(movie.id)" [icon]="faEdit" class="cursor-pointer"></fa-icon>
+        <fa-icon (click)="removeMovie(movie.id)" [icon]="fadelete" class="cursor-pointer"></fa-icon>
+      </div>
+    </div>
+  </div>
+</div>
