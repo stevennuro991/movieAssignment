@@ -9,4 +9,4 @@ import { DropdownButtonComponent } from './dropdown-button/dropdown-button.compo
   declarations: [ButtonsComponent, DropdownButtonComponent],
   exports: [ButtonsComponent]
 })
-export class ComponentsModule {}
+export class ComponentsModule { }

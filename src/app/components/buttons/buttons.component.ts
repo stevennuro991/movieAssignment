@@ -18,7 +18,6 @@ export const buttons: RouteInfo[] = [
     path: "/findMovies",
     title: "Find Movies",
   }
- 
 
 ]
 @Component({
